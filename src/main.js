@@ -46,7 +46,7 @@ const markerOptions = {
     position: homePosition.destinationPoint(90, 15),
     map: map,
     icon: {
-        url: `${HOME_PATH}/img/house.jpg`,
+        url: `${HOME_PATH}/img/home.png`,
         // size: new naver.maps.Size(0, 0),
         origin: new naver.maps.Point(0, 0), // 이미지의 원점
         anchor: new naver.maps.Point(25, 26), // 지도 위에 놓이는 마커의 위치와 일키시킬 아이콘의 기준 위치. default -> 아래쪽 가운데
