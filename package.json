@@ -2,7 +2,7 @@
   "name": "balsanmatzip",
   "version": "0.0.1",
   "description": "발산역 청년주택 입주민들의 맛집 리스트",
-  "main": "index.js",
+  "main": "./src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
