@@ -1,6 +1,6 @@
 'ust strict';
 
-import Buttons from './src/buttons';
+import Buttons from './buttons';
 
 const mapOptions = {
     center: new naver.maps.LatLng(37.55916069282345, 126.8410640925702), // 지도의 초기 중심 좌표(위도와 경도)
