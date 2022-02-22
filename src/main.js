@@ -5,18 +5,19 @@ import Buttons from './buttons.js';
 const LATITUDE = 37.55916069282345;
 const LONGITUDE = 126.8410640925702;
 const HOME_COORDINATE = new naver.maps.LatLng(LATITUDE, LONGITUDE);
-const btns = new Buttons(map);
 
 /* 지도 초기상태 정의 및 초기화 */
 const mapOptions = {
     center: HOME_COORDINATE, // 지도의 초기 중심 좌표(위도와 경도)
     zoom: 18, // 지도의 초기 줌 레벨
+    minZoom: 6,
     zoomControl: true, // 줌 컨트롤 표시 여부
     zoomControlOptions: {
         position: naver.maps.Position.TOP_RIGHT,
     },
 };
 const map = new naver.maps.Map('map', mapOptions);
+const btns = new Buttons(map);
 
 /* CustomControl 객체를 이용한 '발산역 엘크루' 버튼 추가하기 */
 // exam ) 사용자 정의 컨트롤 만들기
