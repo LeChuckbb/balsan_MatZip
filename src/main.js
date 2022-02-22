@@ -38,9 +38,10 @@ naver.maps.Event.once(map, 'init', function () {
 /* HOME Marker 추가하기 */
 // exam) 이미지 아이콘 사용하기
 const HOME_PATH = window.HOME_PATH || '.';
+const homePosition = new naver.maps.LatLng(LATITUDE, LONGITUDE);
 
 const markerOptions = {
-    position: position.destinationPoint(90, 15),
+    position: homePosition.destinationPoint(90, 15),
     map: map,
     icon: {
         url: `${HOME_PATH}/img/home.png`,
